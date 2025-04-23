@@ -1,0 +1,6 @@
+# requirements.txt
+Flask
+requests
+supabase
+python-dotenv
+gunicorn
