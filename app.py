@@ -15,7 +15,7 @@ load_dotenv()
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 SUPABASE_TABLE_NAME = os.environ.get("SUPABASE_TABLE_NAME", "regelwerk_chunks")
-OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://ollama:11434")
+OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "https://ollama.bamboy.de:11434")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral")
 
 # Initialisierung
