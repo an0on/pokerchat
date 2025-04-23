@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Chat AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Poker Chat AI</h1>
+    <div id="chatbox">
+        <div class="message ai">Hallo! Wie kann ich dir heute helfen?</div>
+    </div>
+    <div id="input-area">
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="Stelle eine Frage..." autocomplete="off" required>
+            <button type="submit" id="send-button">Senden</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='client.js') }}"></script>
+</body>
+</html>
