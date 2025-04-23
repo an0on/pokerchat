@@ -1,0 +1,115 @@
+/* static/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f8f9fa; /* Helleres Grau */
+}
+
+h1 {
+    text-align: center;
+    color: #343a40; /* Dunkleres Grau */
+    padding: 15px;
+    margin: 0;
+    background-color: #e9ecef; /* Helleres Grau für Header */
+    border-bottom: 1px solid #dee2e6; /* Rahmen unten */
+    font-size: 1.5em;
+}
+
+#chatbox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 75%;
+    word-wrap: break-word;
+    line-height: 1.4;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.message.user {
+    background-color: #007bff; /* Blau für Nutzer */
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px; /* Kleine Anpassung für Chat-Look */
+}
+
+.message.ai {
+    background-color: #ffffff; /* Weiß für AI */
+    color: #343a40;
+    align-self: flex-start;
+    border: 1px solid #dee2e6;
+    border-bottom-left-radius: 5px; /* Kleine Anpassung für Chat-Look */
+}
+
+.message.loading {
+    background-color: #e9ecef; /* Grau für Ladeanzeige */
+    color: #6c757d; /* Dunkleres Grau für Text */
+    align-self: flex-start;
+    font-style: italic;
+    border: 1px solid #dee2e6;
+    border-bottom-left-radius: 5px;
+}
+
+.message.error {
+    background-color: #f8d7da; /* Rot für Fehler */
+    color: #721c24;
+    align-self: flex-start;
+    border: 1px solid #f5c6cb;
+    border-bottom-left-radius: 5px;
+}
+
+
+#input-area {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #e9ecef;
+    border-top: 1px solid #dee2e6;
+}
+
+#message-form {
+    display: flex;
+    width: 100%;
+    gap: 10px; /* Abstand zwischen Input und Button */
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 1em;
+}
+#message-input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#send-button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+#send-button:disabled {
+    background-color: #6c757d; /* Grau wenn deaktiviert */
+    cursor: not-allowed;
+}
