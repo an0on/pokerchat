@@ -113,4 +113,4 @@ if __name__ == '__main__':
     if not SUPABASE_URL or not SUPABASE_KEY:
         print("Fehler: SUPABASE_URL und SUPABASE_KEY müssen gesetzt sein.")
     else:
-        app.run(debug=True, host='0.0.0.0', port=5000)
+        app.run(debug=True, host='0.0.0.0', port=8787)
