@@ -37,4 +37,4 @@ EXPOSE 8787
 # Läuft auf Port 5000 und ist von außerhalb des Containers erreichbar (0.0.0.0)
 # 'app:app' bedeutet: In der Datei 'app.py' finde die Flask-Instanz namens 'app'
 # Passe die Anzahl der Worker (-w) und Threads nach Bedarf an
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--threads", "4", "--timeout", "120", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8787", "--workers", "2", "--threads", "4", "--timeout", "120", "app:app"]
