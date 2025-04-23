@@ -66,7 +66,6 @@ def home():
     return render_template('index.html')
 
 # --- API Endpunkt (bleibt gleich) ---
-@app.route('/process', methods=['POST'])
 def process_query():
     """
     Nimmt eine Anfrage vom Frontend entgegen, holt Chunks, fragt Mistral
