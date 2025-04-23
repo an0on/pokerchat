@@ -14,8 +14,8 @@ load_dotenv()
 # (Supabase und Ollama Konfigurationen bleiben gleich)
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
-SUPABASE_TABLE_NAME = os.environ.get("SUPABASE_TABLE_NAME", "chunks")
-OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+SUPABASE_TABLE_NAME = os.environ.get("SUPABASE_TABLE_NAME", "regelwerk_chunks")
+OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://ollama:11434")
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "mistral")
 
 # Initialisierung
