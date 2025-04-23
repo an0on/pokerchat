@@ -26,7 +26,7 @@ COPY . .
 
 # Setze Umgebungsvariablen für Flask/Gunicorn
 # PORT wird oft von der Hosting-Plattform (wie Coolify) überschrieben
-ENV PORT=5000
+ENV PORT=8787
 # FLASK_APP wird von Gunicorn verwendet, um die App zu finden
 ENV FLASK_APP=app:app
 
