@@ -31,7 +31,7 @@ ENV PORT=8787
 ENV FLASK_APP=app:app
 
 # Exponiere den Port, auf dem Gunicorn laufen wird (muss mit ENV PORT übereinstimmen)
-EXPOSE 5000
+EXPOSE 8787
 
 # Kommando zum Starten der Anwendung mit Gunicorn (Produktionsserver)
 # Läuft auf Port 5000 und ist von außerhalb des Containers erreichbar (0.0.0.0)
